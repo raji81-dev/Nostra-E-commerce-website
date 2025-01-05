@@ -46,16 +46,15 @@ const images = [
 
     gallery.append(createItem)
 })
-debugger
 var filterList =[]
 var tags = document.getElementsByName("tags")
 console.log(tags)
 
 
 tags.forEach((tag)=>{
-    debugger
+    
     tag.addEventListener("change",(e)=>{
-debugger
+
         if(e.target.checked)
         {
         filterList.push(e.target.value)
@@ -126,11 +125,11 @@ var sliderimage= document.querySelector(".slider-image-container")
 var slidermargin=0
 
 console.log(sliderleftbutton)
-debugger
+
 sliderrightbutton.addEventListener("click",
 
 function(){
-    debugger
+   
     slidermargin=slidermargin+100
 
     if(slidermargin>200)
